@@ -1,0 +1,73 @@
+3 level hierarchy:
+
+-> Frequent Access (Server SSD)
+-> Normal Access (Server HDD)
+-> Rarely Accessed (Remote HDD)
+
+
+
+Operation of System:
+
+Step 1 - Register servers
+Step 2 - Register locations for File Management
+Step 2.1 - Register FA, NA, RA storages.
+Step 3 - Start Indexing
+Step 4 - Start File Movement
+Step 5 - All file saturated.
+
+
+
+Detailed Operations to be followed:
+Step 1 - Registering Servers
+
+1. Ping on Server
+2. Select OS Type
+3. Passwordless ssh/scp if Linux
+4. Tmp folder access if linux/else creation of tmp folder, followed by cleaning.
+
+
+Step 2 - Register Location for File Management
+
+1. Complete Directory path to be managed.
+2. Permissions on the directory
+3. Register FA, NA, and RA storages
+
+
+Step 3 - Start Indexing
+
+1. Complete scan of Directory, with date and time.
+2. Place the scan output in local tmp folders.
+3. Use movement logic for file transfer.
+4. create new file containing movement of from and to.
+
+
+Step 4 - Start File Movement
+
+1. Create multiple batches of appropriate size 
+2. Start file transfer in batches, followed by updating the database.
+
+
+Step - 5 All file saturated.
+
+1. Completion detail of the batches.
+
+
+
+DB Schema:
+
+--> Servers
+IP
+osType
+user
+list of locations
+
+--> storage
+type - FA, NA, RA
+connString
+
+--> Files Collection
+FileName
+Extension
+Date details(All)
+From
+To
