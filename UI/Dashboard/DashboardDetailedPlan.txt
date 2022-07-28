@@ -1,0 +1,23 @@
+The complete Dashboard is divide into below Modules:
+
+    Banner with Server Registration
+        Modal for Server Registration
+    Remainining Body
+        Side Navigation Bar
+            Link - Dashboard           Spring Variable for Index
+            Link - Search              Spring Variable for Search Page
+            Link - Task                Spring Variable for Running Standalone Tasks Page
+            Link - Planners            Spring Variable for Automation Page
+        Main Body Division
+            Container1 For Cards
+                Card1                                   Chart1 Pickup from Workspace
+                Card2                                   Chart2 Pickup from Workspace
+                Card3                                   Chart3 Pickup from Workspace
+                Card4                                   Chart4 Pickup from Workspace
+            Container2 For Tables
+                Movement Table                          Spring Variables provide Table entries
+                Recent Addition Table                   Spring Variables provide Table entries
+            Container3 For Server Space Info.
+                Free Space on Server1                   Spring Variable provide Information
+                Free Space on Server2                   Spring Variable provide Information
+                Free Space on Server3                   Spring Variable provide Information
